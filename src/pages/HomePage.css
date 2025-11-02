@@ -1,6 +1,42 @@
+.home-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+
+.home-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.home-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.home-image {
+    flex: 1;
+}
+
+.home-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 12px;
+}
+
 #fundraiser-list {
     display: grid;
-    grid-template-columns: 30% 30% 30%;
-    column-gap: 10px;
-    row-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
 }

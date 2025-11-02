@@ -1,15 +1,21 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useEffect } from "react";
 
 export const AuthContext = createContext();
 
-export const AuthProvider = (props) => {
-    const [auth, setAuth] = useState({
-        token: window.localStorage.getItem("token"),
-    });
+export const AuthProvider = ({ children }) => {
+    const [auth, setAuth] = useState({ token: null, userId: null });
+
+    useEffect(() => {
+        const token = window.localStorage.getItem("token");
+        const userId = window.localStorage.getItem("userId");
+        if (token && userId) {
+            setAuth({ token, userId });
+        }
+    }, []);
 
     return (
         <AuthContext.Provider value={{ auth, setAuth }}>
-            {props.children}
+            {children}
         </AuthContext.Provider>
     );
 };

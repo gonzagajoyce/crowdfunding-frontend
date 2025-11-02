@@ -16,5 +16,10 @@ export default function useFundraisers() {
         });
     }, []);
 
-    return { fundraisers, isLoading, error };
+
+    const addFundraiser = (newFundraiser) => {
+        setFundraisers((prev) => [...prev, newFundraiser]);
+    };
+
+    return { fundraisers, isLoading, error, addFundraiser };
 }

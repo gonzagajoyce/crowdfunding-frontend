@@ -7,7 +7,9 @@ import FundraiserPage from "./pages/FundraiserPage";
 
 import NavBar from "./components/NavBar";
 import LoginPage from "./pages/LoginPage";
-import { AuthProvider } from "./components/AuthProvider.jsx";
+import { AuthProvider } from "./components/AuthProvider";
+import "./style.css";
+import CreateFundraiserPage from "./pages/CreateFundraiserPage";
 
 const router = createBrowserRouter([
     {
@@ -17,6 +19,7 @@ const router = createBrowserRouter([
         { path: "/", element: <HomePage /> },
         { path: "/login", element: <LoginPage/> },
         { path: "/fundraiser/:id", element: <FundraiserPage /> },
+        { path: "/create-fundraiser", element: <CreateFundraiserPage /> },
       ],
     },
   ]);

@@ -1,13 +1,19 @@
 import { Link } from "react-router-dom";
+import "./FundraiserCard.css";
 
-function FundraiserCard(props) {
-    const { fundraiserData } = props;
-    const fundraiserLink = `fundraiser/${fundraiserData.id}`;
+function FundraiserCard({ fundraiserData }) {
+    const fundraiserLink = `/fundraiser/${fundraiserData.id}`;
 
     return (
-        <div>
+        <div className="fundraiser-card">
             <Link to={fundraiserLink}>
-                <img src={fundraiserData.image} />
+                {fundraiserData.image && (
+                    <img
+                        src={fundraiserData.image}
+                        alt={fundraiserData.title}
+                        className="fundraiser-image"
+                    />
+                )}
                 <h3>{fundraiserData.title}</h3>
             </Link>
         </div>
@@ -15,3 +21,4 @@ function FundraiserCard(props) {
 }
 
 export default FundraiserCard;
+
