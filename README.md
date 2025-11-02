@@ -1,16 +1,28 @@
-# React + Vite
+# English for Hope - Crowdfunding App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+English for Hope is a simple crowdfunding web application where users can create fundraisers, make pledges, and support meaningful causes.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Deployed Project
 
-## React Compiler
+You can view the live frontend here:  
+[English for Hope - Frontend](https://69077d91351e06b1e3798b41--cheerful-chebakia-e10391.netlify.app/)  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Screenshots
+
+### Homepage
+![Homepage](./Screenshots/HomePage1.png)
+./![Homepage](./Screenshots/HomePage2.png)
+
+### Fundraiser Creation Page
+Shows the full page where a user can create a fundraiser.  
+![Fundraiser Creation](./Screenshots/fundraiser-page.png)
+
+### Fundraiser with Pledges
+Shows a fundraiser page with pledges and comments from supporters.  
+![Fundraiser with Pledges](./Screenshots/fundraiser-pledges.png)
+

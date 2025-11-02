@@ -26,7 +26,7 @@ function LoginForm() {
             if (credentials.username && credentials.password) {
                 postLogin(credentials.username, credentials.password)
                     .then(response => {
-                        // salva token e userId direto
+                        
                         window.localStorage.setItem("token", response.token);
                         window.localStorage.setItem("userId", response.userId);
 
